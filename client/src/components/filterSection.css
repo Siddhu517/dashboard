@@ -1,0 +1,52 @@
+.filter {
+  width: 16.5rem;
+  margin: 0px 9px 10px 9px;
+}
+
+.filterMenu a {
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filterMenuList li {
+  min-height: 34px;
+  max-height: auto;
+  width: 14rem;
+  margin-top: 15px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: coral;
+  cursor: pointer;
+}
+
+.filterMenuList .firstli {
+  background-color: blue;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.filterMenuList .lastli {
+  background-color: rgb(4, 178, 74);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.filterRecommendationList li {
+  width: 12.5rem;
+  border: 0;
+  background-color: rgb(229, 226, 223);
+  cursor: pointer;
+}
+
+.filter .card-body .lists {
+  height: 15.3rem;
+  width: 13rem;
+  overflow: auto;
+  overflow-x: hidden;
+  cursor:move;
+}
