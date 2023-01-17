@@ -6,17 +6,17 @@ import { getData } from "../API";
 
 const Index = () => {
   const [filterData, setFilterData] = useState([]);
-  const [allData, setAllData] = useState(null);
+  //const [allData, setAllData] = useState(null);
   const [viewData, setViewData] = useState(null);
 
-  useEffect(() => {
+ /*  useEffect(() => {
    const fetchdata = async () => {
       const res = await getData();
       setAllData(res.data);
       //console.log(res.data)
     }
     fetchdata();
-  }, []);
+  }, []); */
 
   //barChart click function 
   const onClick = (d, i) => {
@@ -57,7 +57,6 @@ const Index = () => {
 
         {/* Display Section   */}
         <Main
-          allData={allData}
           filterData={filterData}
           onClick={onClick}
           viewData={viewData}   

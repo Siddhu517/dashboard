@@ -13,8 +13,6 @@ const YearSection = ({viewData}) => {
         }}
       >
         <span>Year</span>
-        {/* {state &&  state.data.filter((i) => i.endYear === endYear ).map((i)=> <span key={i.id}>{i.end_year}</span>)} */}
-       {/*  {state ? <span>{state.data[19].end_year}</span> : ""} */}
           {viewData ? <span> {viewData.start_year} </span> : ""}
           {viewData ? <span> {viewData.end_year} </span> : ""}
       </div>

@@ -10,14 +10,13 @@ import Relevance from "./Relevance";
 import RegionSection from "./RegionSection";
 
 const Main = ({
-  allData,
   filterData,
   onClick,
   viewData,
 }) => {
   return (
     <div className="main">
-      <div className="mt-2 d-flex justify-content-between align-items-center">
+      <div className="mt-2 d-flex  justify-content-between align-items-center">
         <YearSection  viewData={viewData} />
         <TopicSection viewData={viewData} />
         <Intensity viewData={viewData} />

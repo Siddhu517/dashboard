@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const url = "http://localhost:8001/dashboard";
-
+const url = process.env.REACT_APP_PUBLIC_API;
+console.log(process.env.REACT_APP_PUBLIC_API)
 
 export const getData = async () => {
   return await axios.get(`${url}/all`);
@@ -34,7 +34,6 @@ export const getSource = async (source) => {
 export const getCountry = async (country) => {
   return await axios.post(`${url}/country`, { country });
 };
-
 
 export const getALLFilter = async (allFilterData) => {
   return await axios.post(`${url}/allfilter`, {
