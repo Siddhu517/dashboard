@@ -1,7 +1,5 @@
 import axios from "axios";
 
-axios.defaults.baseURL = process.env.REACT_APP_PUBLIC_API;
-
 export const getData = async () => {
   return await axios.get(`/all`);
 };
